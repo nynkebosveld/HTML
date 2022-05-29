@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Paarden</h1>
+        <div class="topnav">
+            <button id="hamburger" class="">
+                <i id="hamburger2" class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rassen.html">Rassen</a></li>
+                <li><a href="benodigdheden.html">Rijd benodigdheden</a></li>
+                <li><a href="verzorging.html">Verzorging</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="menu_links" id="myLinks">
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="rassen.html">Rassen</a>
+            <a class="link" href="benodigdheden.html">Rijd benodigdheden</a>
+            <a class="link" href="verzorging.html">Verzorging</a>
+        </div>
+        <img src="images/paarden.jpg" alt="Paarden">
+        <div class="container">
+            <a class="no_underline" href="rassen.html"><div class="informatie_container">
+                <img class="img_container" src="images/paarden_rassen.jpg" alt="paarden rassen">
+                <div class="txt_info">
+                    <h1>Rassen</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fuga fugit iusto minus neque officia ratione sapiente sunt tempora voluptate?
+                    </p>
+                </div>
+            </div></a>
+            <a class="no_underline" href="benodigdheden.html"><div class="informatie_container2">
+                <img class="img_container" src="images/rijBenodigdheden.jpg" alt="Rijd benodigdheden">
+                <div class="txt_info">
+                    <h1>Rijd benodigdheden</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fuga fugit iusto minus neque officia ratione sapiente sunt tempora voluptate?
+                    </p>
+                </div>
+            </div></a>
+            <a class="no_underline" href="verzorging.html"><div class="informatie_container3">
+                <img class="img_container" src="images/verzorging.jpg.png" alt="paarden verzorging">
+                <div class="txt_info">
+                    <h1>Verzorging</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fuga fugit iusto minus neque officia ratione sapiente sunt tempora voluptate?
+                    </p>
+                </div>
+            </div></a>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#myLinks').css('display', "none")
+        $('#hamburger').on('click', function () {
+            console.log("x")
+            $('#myLinks').slideToggle();
+        })
+    </script>
+</body>
+</html>

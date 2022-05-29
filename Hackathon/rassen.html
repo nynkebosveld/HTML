@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rassen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <h1>Paarden</h1>
+    <div class="topnav">
+        <button id="hamburger" class="">
+            <i id="hamburger2" class="fa fa-bars"></i>
+        </button>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rassen.html">Rassen</a></li>
+            <li><a href="benodigdheden.html">Rijd benodigdheden</a></li>
+            <li><a href="verzorging.html">Verzorging</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="menu_links" id="myLinks">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="rassen.html">Rassen</a>
+        <a class="link" href="benodigdheden.html">Rijd benodigdheden</a>
+        <a class="link" href="verzorging.html">Verzorging</a>
+    </div>
+    <div class="main">
+        <div class="paarden_ras">
+            <h1>KWPN</h1>
+        </div>
+        <div class="paarden_ras">
+            <h1>Haflinger</h1>
+        </div>
+        <div class="paarden_ras">
+            <h1>Fries</h1>
+        </div>
+        <div class="paarden_ras">
+            <h1>Fjord</h1>
+        </div>
+        <div class="paarden_ras">
+            <h1>IJslander</h1>
+        </div>
+        <div class="paarden_ras">
+            <h1>Shire</h1>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('#myLinks').css('display', "none")
+    $('#hamburger2').on('click', function () {
+        $('#myLinks').slideToggle();
+    })
+</script>
+</body>
+</html>
