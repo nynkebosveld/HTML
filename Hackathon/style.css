@@ -155,6 +155,43 @@
         display: block;
         background-color:#609a60;
     }
+
+    .container_benodigdheden{
+        width: 325px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        border: 2px dotted black;
+        margin: 25px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .form_container{
+        width: 325px;
+        height: auto;
+        border: #609a60 3px dashed;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 25px;
+        text-align: center;
+    }
+
+    label{
+        margin: 5px;
+        font-size: 19px;
+    }
+
+    button{
+        width: 100px;
+        border: #609a60 2px solid;
+        background-color: #b1eab1;
+    }
+
+    input{
+        border: #b1eab1 2px solid;
+    }
 }
 
 @media (min-width: 768px) {
@@ -235,7 +272,6 @@
         width: auto;
         height: auto;
         display: flex;
-        /*flex-direction: row;*/
         flex-wrap: wrap;
         justify-content: space-around;
         align-content: center;
@@ -290,11 +326,77 @@
         background-color: #b1eab1;
         margin: 20px 10px;
         border: #609a60 2px solid;
-        display:flex;
+    }
+
+    .paarden_ras img{
+        width: 350px;
+        height: 325px;
+        border-radius: 20%;
+        margin: 10px 25px;
+    }
+
+    .paarden_ras p{
+        text-align: center;
     }
 
     .paarden_ras h1{
-        margin: 15px 125px;
+        margin: 15px 75px 0 75px;
         height: 50px;
+        width:300px;
+    }
+
+    .container_benodigdheden{
+        width: 750px;
+        display: flex;
+        flex-direction: row;
+        border: 2px dotted black;
+        margin: 50px;
+        text-align: center;
+        padding: 0 10px 5px 20px;
+    }
+
+    .container_benodigdheden h2, .container_benodigdheden p{
+        margin: 25px;
+    }
+
+    .form_container{
+        width: 500px;
+        height: auto;
+        border: #609a60 3px dashed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 25px;
+        text-align: center;
+        padding-left: 25px;
+    }
+
+    label{
+        margin: 5px;
+        font-size: 23px;
+    }
+
+    table{
+        margin: 0 20px;
+    }
+
+    button{
+        width: 150px;
+        height: 25px;
+        font-size: 19px;
+        border: #609a60 2px solid;
+        background-color: #b1eab1;
+    }
+
+    input{
+        border: #b1eab1 2px solid;
+        height: 30px;
+        width: 180px;
+        margin: 5px;
+    }
+
+    .opvul_container{
+        height: 225px;
+        width: 1000px;
     }
 }
