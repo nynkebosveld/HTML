@@ -1,0 +1,73 @@
+@import "constants.scss";
+
+$icon-height: 100px; 
+$icon-width: 100px;
+$width:400px;
+
+.blog {
+    background-color: #e17b77;
+    height: $icon-height;
+    width: $width;
+}
+
+.facebook {
+    background-color: #3b5998;
+    height: $icon-height;
+    width: $width;
+}
+
+.twitter {
+    background-color: #00aced;
+    height: $icon-height;
+    width: $width;
+}
+
+.github {
+    background-color: #333;
+    height: $icon-height;
+    width: $width;
+}
+
+.linkedin {
+    background-color: #007bb6;
+    height: $icon-height;
+    width: $width;
+}
+
+.social-media{
+    height: 600px;
+    width: $width;
+    transform: translateX(-310px);
+}
+
+.social-media-img{
+    height: $icon-height;
+    width: $icon-width;
+    float: right;
+
+}
+
+.blog:hover, .facebook:hover, .github:hover, .twitter:hover, .linkedin:hover{
+    // transform: translateX(-200px);
+    // transition: 2s;
+    animation-name: slide-in;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+.icon-tekst{
+    width: 200px;
+    height: 100px;
+    color: $color-white;
+    float: right;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+@keyframes slide-in{
+    from{transform: translateX(0);}
+    to{transform: translateX(250px);}
+}

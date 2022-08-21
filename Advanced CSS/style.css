@@ -1,0 +1,128 @@
+.div {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5% 5% 0 0;
+  color: grey;
+  font-size: 23px;
+}
+
+.purple {
+  font-size: 19px;
+  color: #a2a5ff;
+  margin: -10px;
+}
+
+.img-header {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  transform: translateY(0px);
+}
+
+footer {
+  padding-top: 50px;
+  background-color: #686de0;
+  width: 300px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 0 0 5% 5%;
+}
+
+.blog {
+  background-color: #e17b77;
+  height: 100px;
+  width: 400px;
+}
+
+.facebook {
+  background-color: #3b5998;
+  height: 100px;
+  width: 400px;
+}
+
+.twitter {
+  background-color: #00aced;
+  height: 100px;
+  width: 400px;
+}
+
+.github {
+  background-color: #333;
+  height: 100px;
+  width: 400px;
+}
+
+.linkedin {
+  background-color: #007bb6;
+  height: 100px;
+  width: 400px;
+}
+
+.social-media {
+  height: 600px;
+  width: 400px;
+  transform: translateX(-310px);
+}
+
+.social-media-img {
+  height: 100px;
+  width: 100px;
+  float: right;
+}
+
+.blog:hover, .facebook:hover, .github:hover, .twitter:hover, .linkedin:hover {
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.icon-tekst {
+  width: 200px;
+  height: 100px;
+  color: white;
+  float: right;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(250px);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(250px);
+  }
+}
+body {
+  background-color: #c3cfe2;
+}/*# sourceMappingURL=style.css.map */
