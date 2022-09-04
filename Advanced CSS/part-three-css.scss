@@ -35,6 +35,7 @@ $width:400px;
 }
 
 .social-media{
+    float: left;
     height: 600px;
     width: $width;
     transform: translateX(-310px);
@@ -47,10 +48,14 @@ $width:400px;
 
 }
 
-.blog:hover, .facebook:hover, .github:hover, .twitter:hover, .linkedin:hover{
-    // transform: translateX(-200px);
-    // transition: 2s;
+.blog:hover, .facebook:hover, .github:hover, .twitter:hover, .linkedin:hover {
     animation-name: slide-in;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+.blog, .facebook, .github, .twitter, .linkedin {
+    animation-name: slide-out;
     animation-duration: 2s;
     animation-fill-mode: both;
     animation-direction: alternate;
@@ -70,4 +75,9 @@ $width:400px;
 @keyframes slide-in{
     from{transform: translateX(0);}
     to{transform: translateX(250px);}
+}
+
+@keyframes slide-out{
+    from{transform: translateX(250px);}
+    to{transform: translateX(0);}
 }
